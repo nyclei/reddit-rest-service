@@ -1,6 +1,6 @@
 package com.lei.model;
 
-public class T3 {
+public class T3 implements Comparable<T3> {
 	private String kind;
 	private Item data;
 	
@@ -15,6 +15,11 @@ public class T3 {
 	}
 	public void setData(Item data) {
 		this.data = data;
+	}
+	
+	@Override
+	public int compareTo(T3 t3) {
+		return this.getData().getAuthor().compareTo(t3.getData().getAuthor());
 	}
 
 }

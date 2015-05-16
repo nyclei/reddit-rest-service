@@ -2,7 +2,7 @@
 
 #### Maven build (requires maven 3):
 - $MAVEN3_HOME/bin/mvn clean package
-- *For example:* ``` /Users/lli1/about2/apache-maven-3.3.3/bin/mvn clean package_ ```
+- *For example:* ``` /Users/lli1/about2/apache-maven-3.3.3/bin/mvn clean package ```
 
 ___
 
@@ -18,3 +18,5 @@ ___
 - http://localhost:8080/reddit/search?q=orchid (need internet)
 - http://localhost:8080/reddit/search?q=dandelion (need internet)
 - http://localhost:8080/reddit/search?q=manhattan (need internet)
+- http://localhost:8080/reddit/search?q=Time%20Square&sort-author=asc (sort author in ascending order)
+- http://localhost:8080/reddit/search?q=Time%20Square&sort-author=desc (sort author in descending order)
