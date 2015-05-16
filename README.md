@@ -25,7 +25,7 @@ ___
 
 #### Screenshots
 - hello API
-![hello](./images/API-hello.png =300x)
+<br><img src="./images/API-hello.png" width="300">
 
 - search API (sort in ascending order)
 ![reddit search asc](./images/API-search-asc.png)
