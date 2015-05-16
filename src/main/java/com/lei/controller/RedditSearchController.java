@@ -1,7 +1,5 @@
 package com.lei.controller;
 
-import java.io.UnsupportedEncodingException;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.core.Context;
 
@@ -25,6 +23,12 @@ public class RedditSearchController {
     	this.service = service;
     }
     
+    /**
+     * Hello API
+     * @param request a regular httpRequest
+     * @param name a string value
+     * @return Greeting message
+     */
     @RequestMapping("/hello")
     public Hello hello( @Context HttpServletRequest request,
     					@RequestParam(value="name", defaultValue="New York") String name) {
@@ -34,13 +38,22 @@ public class RedditSearchController {
     	return greeting;
     }
     
+    /**
+     * Reddit Search API
+     * @param request a regular httpRequest
+     * @param keyword the word caller searches for
+     * @param sort   asc  - sort document item by author name in ascending order
+     * 				desc  - sort document item by author name in descending order
+     *              [none]- no sort, the result is returned in original order
+     * @return the sorted search result of Listing, which will be marshalling in JSON
+     */
     @RequestMapping("/reddit/search")
     public Listing search( @Context HttpServletRequest request,
     					   @RequestParam(value="q") String keyword,
                            @RequestParam(value="sort-author", defaultValue="") String sort) {
     	log.info(request.getRequestURL().append('?').append(request.getQueryString()));
     	    	
-    	if(this.service == null) { 	       // 'service' should be initialized by IoC
+    	if(this.service == null) { 	       // 'service' cold be initialized by IoC in spring App
     		this.service = new RedditService();
     	}
     	

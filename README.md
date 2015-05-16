@@ -8,7 +8,7 @@ ___
 
 #### Launch server on port 8080:
 ``` java -jar target/lei-rest-service-0.1.0.jar ```
-or 
+or
 ``` java -jar target/lei-rest-service-0.1.0.war ```
 
 ___
@@ -22,3 +22,13 @@ ___
 - http://localhost:8080/reddit/search?q=manhattan (need internet)
 - [http://localhost:8080/reddit/search?q=Time%20Square&sort-author=asc](http://localhost:8080/reddit/search?q=Time%20Square&sort-author=asc) (sort author in ascending order)
 - [http://localhost:8080/reddit/search?q=Time%20Square&sort-author=desc](http://localhost:8080/reddit/search?q=Time%20Square&sort-author=desc) (sort author in descending order)
+
+#### Screenshots
+- hello API
+![hello](https://raw.githubusercontent.com/nyclei/reddit-rest-service/master/images/API-hello.png)
+
+- search API (sort in ascending order)
+![reddit search asc](https://raw.githubusercontent.com/nyclei/reddit-rest-service/master/images/API-search-asc.png)
+
+- search API (sort in descending order)
+![reddit search desc](https://raw.githubusercontent.com/nyclei/reddit-rest-service/master/images/API-search-desc.png)
