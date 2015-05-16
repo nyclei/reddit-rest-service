@@ -14,12 +14,14 @@ or
 ___
 
 #### Test in browser
-(refresh page if seeing BLANK response or  **429 Too Many Requests** from reddit.com's API)
+I made the simplified version of data model, the search API returns simplified version of Reddit document item with less fields comparing with original document.  
+
+*(refresh page if seeing BLANK response or  **429 Too Many Requests** from reddit.com's API.)*
 - [http://localhost:8080/hello](http://localhost:8080/hello)
 - [http://localhost:8080/hello?name=BigDaddy](http://localhost:8080/hello?name=BigDaddy)
 - [http://localhost:8080/reddit/search?q=orchid](http://localhost:8080/reddit/search?q=orchid) (need internet)
 - [http://localhost:8080/reddit/search?q=dandelion](http://localhost:8080/reddit/search?q=dandelion) (need internet)
-- http://localhost:8080/reddit/search?q=manhattan (need internet)
+- [http://localhost:8080/reddit/search?q=manhattan](http://localhost:8080/reddit/search?q=manhattan) (need internet)
 - [http://localhost:8080/reddit/search?q=Time%20Square&sort-author=asc](http://localhost:8080/reddit/search?q=Time%20Square&sort-author=asc) (sort author in ascending order)
 - [http://localhost:8080/reddit/search?q=Time%20Square&sort-author=desc](http://localhost:8080/reddit/search?q=Time%20Square&sort-author=desc) (sort author in descending order)
 
