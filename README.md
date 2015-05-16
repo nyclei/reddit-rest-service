@@ -25,10 +25,10 @@ ___
 
 #### Screenshots
 - hello API
-![hello](https://raw.githubusercontent.com/nyclei/reddit-rest-service/master/images/API-hello.png)
+![hello](./images/API-hello.png =300x)
 
 - search API (sort in ascending order)
-![reddit search asc](https://raw.githubusercontent.com/nyclei/reddit-rest-service/master/images/API-search-asc.png)
+![reddit search asc](./images/API-search-asc.png)
 
 - search API (sort in descending order)
-![reddit search desc](https://raw.githubusercontent.com/nyclei/reddit-rest-service/master/images/API-search-desc.png)
+![reddit search desc](./images/API-search-desc.png)
