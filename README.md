@@ -7,9 +7,14 @@
 ___
 
 #### Launch server on port 8080:
-``` java -jar target/lei-rest-service-0.1.0.jar ```
+``` 
+java -jar target/lei-rest-service-0.1.0.jar 
+```
 or
-``` java -jar target/lei-rest-service-0.1.0.war ```
+
+``` 
+java -jar target/lei-rest-service-0.1.0.war 
+```
 
 ___
 
